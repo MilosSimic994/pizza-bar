@@ -1,0 +1,302 @@
+$primaryColor: #ffba00; // zuta
+$secondaryColor: #242424; // tamno siva
+$footerColor: #483500; // brown
+$whiteColor: #fff; // bela
+
+//mixins
+
+@mixin flex($justify, $align, $direction, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80vw;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba($secondaryColor, 0.7),
+      rgba($secondaryColor, 0.7)
+    ),
+    url(/img/header.jpg);
+  height: 90vh;
+  justify-content: space-between;
+  position: relative;
+  @include flex(space-between, center, column, wrap);
+
+  nav {
+    @include flex(space-between, center, row, wrap);
+    padding-top: 20px;
+    width: 100%;
+
+    .logo {
+      background: $primaryColor;
+      color: $whiteColor;
+      padding: 15px 15px 15px 150px;
+      font-size: 18px;
+    }
+    ul {
+      @include flex(space-around, center, row, wrap);
+      width: 65%;
+      padding-right: 130px;
+
+      a {
+        color: $whiteColor;
+        text-transform: capitalize;
+        font-size: 28px;
+        letter-spacing: 4px;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  .bg-marker {
+    height: 20vh;
+    width: 100%;
+    background: $primaryColor;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .title {
+    @include flex(flex-start, flex-end, row, wrap);
+    width: 70%;
+    color: $whiteColor;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-55%);
+    letter-spacing: 4px;
+
+    h2 {
+      font-size: 6.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 300px;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    button {
+      padding: 20px 20px 20px 60px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      background: $primaryColor;
+      color: $whiteColor;
+      border: 2px solid $whiteColor;
+      cursor: pointer;
+    }
+  }
+}
+
+.what-new {
+  background-color: $secondaryColor;
+  height: 70vh;
+  position: relative;
+  img {
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .bg-marker {
+    background-color: $primaryColor;
+    height: 20vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+  }
+
+  article {
+    @include flex(flex-start, center, row, wrap);
+    color: $whiteColor;
+    width: 50vw;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+
+    .new-format {
+      color: $whiteColor;
+      transform: rotate(270deg);
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    hgroup {
+      @include flex(space-between, flex-start, column, wrap);
+      height: 30vh;
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+      }
+      p {
+        font-size: 24px;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+//content
+
+.content {
+  width: 100%;
+  @include flex(center, center, row, wrap);
+
+  .container {
+    @include flex(space-around, center, row, wrap);
+
+    height: 30vh;
+
+    article {
+      flex: 0 0 20%;
+      h3 {
+        font-size: 1.7rem;
+        color: $primaryColor;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+//new mwnu
+
+.new-menu {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba($secondaryColor, 0.7),
+      rgba($secondaryColor, 0.7)
+    ),
+    url(/img/menu.jpg);
+  position: relative;
+  @include flex(space-between, center, column, wrap);
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $primaryColor;
+    margin-top: 3rem;
+  }
+
+  .h2-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    color: $primaryColor;
+    border: 2px solid $whiteColor;
+    padding: 0 48rem 60px 20rem;
+    position: absolute;
+    top: 15%;
+    right: 0;
+  }
+
+  .bg-marker {
+    background: $primaryColor;
+    height: 30vh;
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .bg-marker2 {
+    width: 15rem;
+    height: 3rem;
+    background: #fffb007c;
+    position: absolute;
+    top: 50%;
+    right: 26%;
+    z-index: 22;
+    transform: rotate(-90deg);
+  }
+
+  .menu {
+    color: $whiteColor;
+    position: absolute;
+    width: 35vw;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 40px;
+
+    div {
+      @include flex(space-between, center, row, wrap);
+      margin-top: 2rem;
+      width: 100%;
+
+      h3 {
+        color: $whiteColor;
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 2.2rem;
+      }
+    }
+    small {
+      font-size: 20px;
+    }
+  }
+
+  .dolore {
+    color: $whiteColor;
+    width: 50vw;
+    height: 20vh;
+
+    h2 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      padding-left: 9rem;
+    }
+
+    hgroup {
+      width: 45%;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      border: 2px solid $whiteColor;
+      padding: 25px 0 25px 10rem;
+      position: absolute;
+      bottom: 2%;
+      right: 31%;
+    }
+  }
+}
