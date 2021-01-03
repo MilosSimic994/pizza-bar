@@ -43,6 +43,8 @@ header nav .logo {
   color: #fff;
   padding: 15px 15px 15px 150px;
   font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 header nav ul {
@@ -111,6 +113,10 @@ header .title button {
   cursor: pointer;
 }
 
+header .title button:hover {
+  background: #f8be1e;
+}
+
 .what-new {
   background-color: #242424;
   height: 70vh;
@@ -157,6 +163,10 @@ header .title button {
   font-size: 3rem;
   margin: 0;
   padding: 0;
+}
+
+.what-new article .new-format h3 {
+  font-weight: 400;
 }
 
 .what-new article hgroup {
@@ -232,12 +242,13 @@ header .title button {
 }
 
 .new-menu .h2-title {
+  text-transform: uppercase;
   text-align: center;
   font-size: 4rem;
   font-weight: 400;
   color: #ffba00;
   border: 2px solid #fff;
-  padding: 0 48rem 60px 20rem;
+  padding: 0 44rem 60px 15.5rem;
   position: absolute;
   top: 15%;
   right: 0;
@@ -324,5 +335,277 @@ header .title button {
   position: absolute;
   bottom: 2%;
   right: 31%;
+}
+
+.about {
+  background: #242424;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about h2 {
+  color: #ffba00;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about h2 span {
+  font-weight: 600;
+}
+
+.about p {
+  width: 45vw;
+  margin-bottom: 1.5rem;
+}
+
+.about ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about ul li {
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.about ul li:hover {
+  color: #ffba00;
+}
+
+.masterclass {
+  background-image: linear-gradient(rgba(36, 36, 36, 0.7), rgba(36, 36, 36, 0.7)), url(/img/pizza-masterclass.jpg);
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 200px;
+}
+
+.masterclass__title {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.masterclass__for-you {
+  background: #ffba00;
+  padding: 60px 40px;
+  margin-top: 4rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.masterclass__for-you h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.masterclass__for-you p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.masterclass__for-you div {
+  text-align: right;
+  margin-top: 5rem;
+}
+
+.masterclass__for-you div p {
+  margin-top: 10px;
+}
+
+.masterclass button {
+  background-color: #ffba00;
+  padding: 40px 240px 20px 30px;
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.masterclass button:hover {
+  background: #f8be1e;
+}
+
+.gallery {
+  background: #242424;
+  height: 120vh;
+  position: relative;
+}
+
+.gallery h2 {
+  color: #fff;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 80px 0 50px;
+  font-size: 2.2rem;
+}
+
+.gallery .bg-marker {
+  background: #ffba00;
+  height: 120vh;
+  width: 15vw;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.gallery__top {
+  position: relative;
+  z-index: 4;
+  flex-basis: 1;
+}
+
+.gallery__top article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery__top article img {
+  height: 50vh;
+  flex: 0 0 23%;
+}
+
+.gallery__top article img:first-child {
+  flex: 0 0 50%;
+}
+
+.gallery__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.gallery__bottom div {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery__bottom div .text {
+  flex: 0 0 48%;
+  font-size: 22px;
+  line-height: 2rem;
+  position: relative;
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+
+.gallery__bottom div .text small {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.gallery__bottom div .links {
+  flex: 0 0 48%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gallery__bottom div .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery__bottom div .links ul li {
+  padding: 20px 20px 20px 0;
+}
+
+.gallery__bottom div .links ul li i {
+  background-color: #fff;
+  color: #242424;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gallery__bottom div .links a {
+  color: #ffba00;
+  font-size: 2.2rem;
+}
+
+footer {
+  height: 40vh;
+  background-color: #483500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 150px;
+}
+
+footer article {
+  flex: 1;
+  padding: 0 100px;
+  color: #fff;
+}
+
+footer article h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 30px;
+  padding: 50px 0;
+  font-weight: 400;
+}
+
+footer article li,
+footer article p {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+footer article:first-child {
+  flex: 3;
 }
 /*# sourceMappingURL=style.css.map */
