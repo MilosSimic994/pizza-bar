@@ -28,6 +28,13 @@ header {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 375px) {
+  header {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -47,6 +54,12 @@ header nav .logo {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 375px) {
+  header nav .logo {
+    padding: 10px 10px 10px 30px;
+  }
+}
+
 header nav ul {
   display: flex;
   justify-content: space-around;
@@ -55,6 +68,29 @@ header nav ul {
   flex-wrap: wrap;
   width: 65%;
   padding-right: 130px;
+}
+
+@media screen and (max-width: 375px) {
+  header nav ul {
+    background: #242424;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    z-index: 111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header nav ul li {
+    padding: 15px 0;
+  }
 }
 
 header nav ul a {
@@ -91,6 +127,13 @@ header .title {
   letter-spacing: 4px;
 }
 
+@media screen and (max-width: 375px) {
+  header .title {
+    top: 55%;
+    transform: translateY(-55%);
+  }
+}
+
 header .title h2 {
   font-size: 6.5rem;
   text-transform: uppercase;
@@ -100,6 +143,13 @@ header .title h2 {
 
 header .title h2 span {
   font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  header .title h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
 }
 
 header .title button {
@@ -117,6 +167,13 @@ header .title button:hover {
   background: #f8be1e;
 }
 
+@media screen and (max-width: 375px) {
+  header .title button {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+}
+
 .what-new {
   background-color: #242424;
   height: 70vh;
@@ -132,6 +189,12 @@ header .title button:hover {
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 375px) {
+  .what-new img {
+    display: none;
+  }
+}
+
 .what-new .bg-marker {
   background-color: #ffba00;
   height: 20vh;
@@ -140,6 +203,13 @@ header .title button:hover {
   top: 50%;
   left: 12%;
   transform: translateY(-50%);
+}
+
+@media screen and (max-width: 375px) {
+  .what-new .bg-marker {
+    width: 90vw;
+    left: 5%;
+  }
 }
 
 .what-new article {
@@ -157,6 +227,14 @@ header .title button:hover {
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 375px) {
+  .what-new article {
+    width: 100%;
+    height: 70vh;
+    left: 0;
+  }
+}
+
 .what-new article .new-format {
   color: #fff;
   transform: rotate(270deg);
@@ -169,6 +247,12 @@ header .title button:hover {
   font-weight: 400;
 }
 
+@media screen and (max-width: 375px) {
+  .what-new article .new-format {
+    display: none;
+  }
+}
+
 .what-new article hgroup {
   display: flex;
   justify-content: space-between;
@@ -176,6 +260,12 @@ header .title button:hover {
   flex-direction: column;
   flex-wrap: wrap;
   height: 30vh;
+}
+
+@media screen and (max-width: 375px) {
+  .what-new article hgroup {
+    height: 40vh;
+  }
 }
 
 .what-new article hgroup h2 {
@@ -207,6 +297,17 @@ header .title button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   height: 30vh;
+}
+
+@media screen and (max-width: 375px) {
+  .content .container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .content .container article {
@@ -241,6 +342,12 @@ header .title button:hover {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 375px) {
+  .new-menu h3 {
+    margin-top: 1rem;
+  }
+}
+
 .new-menu .h2-title {
   text-transform: uppercase;
   text-align: center;
@@ -254,6 +361,13 @@ header .title button:hover {
   right: 0;
 }
 
+@media screen and (max-width: 375px) {
+  .new-menu .h2-title {
+    padding: 10px 20px;
+    font-size: 2rem;
+  }
+}
+
 .new-menu .bg-marker {
   background: #ffba00;
   height: 30vh;
@@ -262,6 +376,12 @@ header .title button:hover {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+@media screen and (max-width: 375px) {
+  .new-menu .bg-marker {
+    width: 100%;
+  }
 }
 
 .new-menu .bg-marker2 {
@@ -275,6 +395,14 @@ header .title button:hover {
   transform: rotate(-90deg);
 }
 
+@media screen and (max-width: 375px) {
+  .new-menu .bg-marker2 {
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .new-menu .menu {
   color: #fff;
   position: absolute;
@@ -282,6 +410,13 @@ header .title button:hover {
   top: 50%;
   transform: translateY(-50%);
   padding-top: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .new-menu .menu {
+    width: 100%;
+    padding: 30px;
+  }
 }
 
 .new-menu .menu div {
@@ -302,8 +437,20 @@ header .title button:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 375px) {
+  .new-menu .menu div h3 {
+    font-size: 1.3rem;
+  }
+}
+
 .new-menu .menu div p {
   font-size: 2.2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .new-menu .menu div p {
+    font-size: 1.3rem;
+  }
 }
 
 .new-menu .menu small {
@@ -316,6 +463,12 @@ header .title button:hover {
   height: 20vh;
 }
 
+@media screen and (max-width: 375px) {
+  .new-menu .dolore {
+    width: 100%;
+  }
+}
+
 .new-menu .dolore h2 {
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -323,6 +476,13 @@ header .title button:hover {
   letter-spacing: 4px;
   margin-bottom: 20px;
   padding-left: 9rem;
+}
+
+@media screen and (max-width: 375px) {
+  .new-menu .dolore h2 {
+    padding-left: 1rem;
+    margin-bottom: 30px;
+  }
 }
 
 .new-menu .dolore hgroup {
@@ -335,6 +495,15 @@ header .title button:hover {
   position: absolute;
   bottom: 2%;
   right: 31%;
+}
+
+@media screen and (max-width: 375px) {
+  .new-menu .dolore hgroup {
+    padding: 10px 15px;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .about {
@@ -350,6 +519,13 @@ header .title button:hover {
   font-size: 20px;
 }
 
+@media screen and (max-width: 375px) {
+  .about {
+    justify-content: space-around;
+    font-size: 18px;
+  }
+}
+
 .about h2 {
   color: #ffba00;
   text-transform: uppercase;
@@ -362,9 +538,22 @@ header .title button:hover {
   font-weight: 600;
 }
 
+@media screen and (max-width: 375px) {
+  .about h2 {
+    font-size: 1.3rem;
+    margin: 1rem;
+  }
+}
+
 .about p {
   width: 45vw;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .about p {
+    width: 90%;
+  }
 }
 
 .about ul {
@@ -375,6 +564,12 @@ header .title button:hover {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 375px) {
+  .about ul {
+    width: 60%;
+  }
+}
+
 .about ul li {
   padding-right: 35px;
   cursor: pointer;
@@ -382,6 +577,12 @@ header .title button:hover {
 
 .about ul li:hover {
   color: #ffba00;
+}
+
+@media screen and (max-width: 375px) {
+  .about ul li {
+    padding-bottom: 10px;
+  }
 }
 
 .masterclass {
@@ -397,11 +598,30 @@ header .title button:hover {
   padding-right: 200px;
 }
 
+@media screen and (max-width: 375px) {
+  .masterclass {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+  }
+}
+
 .masterclass__title {
   margin-top: 4rem;
   font-size: 2.2rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 375px) {
+  .masterclass__title {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    padding-top: 0;
+  }
 }
 
 .masterclass__for-you {
@@ -412,10 +632,22 @@ header .title button:hover {
   position: relative;
 }
 
+@media screen and (max-width: 375px) {
+  .masterclass__for-you {
+    margin-top: 1rem;
+  }
+}
+
 .masterclass__for-you h2 {
   font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .masterclass__for-you h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .masterclass__for-you p {
@@ -424,9 +656,21 @@ header .title button:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 375px) {
+  .masterclass__for-you p {
+    font-size: 1.1rem;
+  }
+}
+
 .masterclass__for-you div {
   text-align: right;
   margin-top: 5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .masterclass__for-you div {
+    margin-top: 2rem;
+  }
 }
 
 .masterclass__for-you div p {
@@ -449,6 +693,13 @@ header .title button:hover {
   background: #f8be1e;
 }
 
+@media screen and (max-width: 375px) {
+  .masterclass button {
+    font-size: 1.3rem;
+    padding: 30px 40px 30px 110px;
+  }
+}
+
 .gallery {
   background: #242424;
   height: 120vh;
@@ -461,6 +712,13 @@ header .title button:hover {
   text-align: center;
   padding: 80px 0 50px;
   font-size: 2.2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .gallery h2 {
+    font-size: 1.8rem;
+    padding: 30px;
+  }
 }
 
 .gallery .bg-marker {
@@ -487,13 +745,39 @@ header .title button:hover {
   gap: 1rem;
 }
 
+@media screen and (max-width: 375px) {
+  .gallery__top article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .gallery__top article img {
   height: 50vh;
   flex: 0 0 23%;
 }
 
+@media screen and (max-width: 375px) {
+  .gallery__top article img {
+    height: 10rem;
+  }
+}
+
 .gallery__top article img:first-child {
   flex: 0 0 50%;
+}
+
+@media screen and (max-width: 375px) {
+  .gallery__top article img:first-child {
+    flex: 0 0 23%;
+  }
+}
+
+.gallery__top article img:last-child {
+  display: none;
 }
 
 .gallery__bottom {
@@ -503,6 +787,12 @@ header .title button:hover {
   flex-direction: column;
   flex-wrap: wrap;
   color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .gallery__bottom {
+    position: relative;
+  }
 }
 
 .gallery__bottom div {
@@ -517,6 +807,17 @@ header .title button:hover {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 375px) {
+  .gallery__bottom div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 .gallery__bottom div .text {
   flex: 0 0 48%;
   font-size: 22px;
@@ -526,10 +827,24 @@ header .title button:hover {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 375px) {
+  .gallery__bottom div .text {
+    font-size: 20px;
+    line-height: 1.4rem;
+    width: 90%;
+  }
+}
+
 .gallery__bottom div .text small {
   position: absolute;
   bottom: 0;
   right: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .gallery__bottom div .text small {
+    right: 20px;
+  }
 }
 
 .gallery__bottom div .links {
@@ -543,6 +858,12 @@ header .title button:hover {
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 375px) {
+  .gallery__bottom div .links {
+    padding: 0 10px;
+  }
 }
 
 .gallery__bottom div .links ul {
@@ -574,6 +895,12 @@ header .title button:hover {
   font-size: 2.2rem;
 }
 
+@media screen and (max-width: 375px) {
+  .gallery__bottom div .links a {
+    color: #fff;
+  }
+}
+
 footer {
   height: 40vh;
   background-color: #483500;
@@ -585,10 +912,22 @@ footer {
   padding: 0 150px;
 }
 
+@media screen and (max-width: 375px) {
+  footer {
+    padding: 0 20px;
+  }
+}
+
 footer article {
   flex: 1;
   padding: 0 100px;
   color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  footer article {
+    padding: 0 20px;
+  }
 }
 
 footer article h3 {
@@ -599,13 +938,32 @@ footer article h3 {
   font-weight: 400;
 }
 
+@media screen and (max-width: 375px) {
+  footer article h3 {
+    font-size: 1.3rem;
+  }
+}
+
 footer article li,
 footer article p {
   font-size: 22px;
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 375px) {
+  footer article li,
+  footer article p {
+    font-size: 16px;
+  }
+}
+
 footer article:first-child {
   flex: 3;
+}
+
+@media screen and (max-width: 375px) {
+  footer article:first-child {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
