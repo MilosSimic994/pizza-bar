@@ -632,8 +632,10 @@ header {
           flex: 0 0 23%;
         }
       }
-      img:last-child {
-        display: none;
+      @include mob {
+        img:last-child {
+          display: none;
+        }
       }
     }
   }

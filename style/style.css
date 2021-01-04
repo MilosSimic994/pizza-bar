@@ -776,8 +776,10 @@ header .title button:hover {
   }
 }
 
-.gallery__top article img:last-child {
-  display: none;
+@media screen and (max-width: 375px) {
+  .gallery__top article img:last-child {
+    display: none;
+  }
 }
 
 .gallery__bottom {
