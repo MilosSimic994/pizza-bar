@@ -106,6 +106,10 @@ header nav ul a:hover {
   color: #ffba00;
 }
 
+header nav .hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 375px) {
   header nav .hamburger {
     display: flex;

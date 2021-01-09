@@ -107,6 +107,7 @@ header {
       }
     }
     .hamburger {
+      display: none;
       @include mob {
         display: flex;
         width: 40px;
